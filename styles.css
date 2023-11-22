@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.content {
+    /* Use Flexbox */
+    display: flex; 
+    /* Items wrap to the next line if width isn't enough */
+    flex-wrap: wrap;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+h1 {
+    text-align: center;
+    /* Full width for the heading */
+    width: 100%;
+    color: #551A8B;
+}
+
+h3 {
+    color: #551A8B;
+}
+
+
+.introduction {
+    /* Grow to take available space */
+    flex: 1; 
+    box-sizing: border-box;
+    margin-right: 20px;
+}
+
+.introduction p {
+    padding: .5rem;
+    text-align: justify;
+}
+
+.about-me-image {
+    /* Utilize available space */
+    flex: 1;
+    box-sizing: border-box;
+}
+
+.about-me-image img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.about-me-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    /* Centering */
+    margin: 0 auto; 
+}
+
+.social-links {
+    text-align: center;
+}
+
+/* Style the link icons */
+.bi {
+    padding: 16px;
+}
+
+/* Add Responsiveness */
+@media (max-width: 600px) {
+    .introduction,
+    .about-me-image {
+        /* Full width on small screens */
+        flex: 100%; 
+        margin-right: 0;
+    }
+}
